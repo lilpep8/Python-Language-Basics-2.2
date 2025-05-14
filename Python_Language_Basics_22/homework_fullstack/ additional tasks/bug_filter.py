@@ -5,12 +5,15 @@ tests = ["Ошибка 1 – High",
         "Ошибка 4 – High",
         "Ошибка 5 – Medium",
         "Ошибка 6 – Low",
-        "Ошибка 7 – Low",]
+        "Ошибка 7 – Low"]
+
 answer = []
 value = input("Введите приоритет для поиска (High, Medium, Low): ")
-for i in tests:
-    if value in i:
-        i = f"- {i}"
-        answer.append(i)
-for i in answer:
-    print(i)
+
+for test in tests:
+    if value in test:
+        formatted_test  = f"- {test}"
+        answer.append(formatted_test)
+
+for item in answer:
+    print(item)
